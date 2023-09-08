@@ -1,0 +1,65 @@
+Certainly, here's the text with the additional information about installing the utilities:
+
+---
+
+## FPGA Programming with the Terminal
+
+Have you ever considered programming an FPGA (Field-Programmable Gate Array) without dealing with complex development tools? Good news: it's now possible thanks to a simple yet powerful technique.
+
+### The Power of the Terminal
+
+The command-line terminal is one of the most powerful tools at a developer's disposal. When used effectively, you can automate tasks, manage files, and even program an FPGA.
+
+### Prerequisites
+
+Before you begin, you'll need to install the necessary utilities:
+
+- [Complete Adept Utilities](https://lp.digilent.com/complete-adept-utilities-download)
+- [Complete Adept Runtime](https://lp.digilent.com/complete-adept-runtime-download)
+
+After downloading the utilities, follow these steps to install:
+
+1. Run the installation script `./install.sh` using the following commands:
+
+   chmod +x ./install.sh
+   sudo ./install.sh
+
+
+2. Make sure to install the runtime first, followed by the utilities. This ensures a smooth setup process.
+
+### Simple Steps
+
+Here's how to program an FPGA using the terminal:
+
+1. **Preparation**: Ensure you have the FPGA hardware connected to your system and the necessary configuration files ready.
+
+2. **Open the Terminal**: Launch the terminal on your system.
+
+3. **Execute Commands**: Use specific commands to initialize the FPGA, load the bitstream, and perform the programming. For example:
+
+   djtgcfg enum
+   djtgcfg init -d FPGAname
+   djtgcfg prog -d FPGAname -i 0 -f Path_to_the_bitstream
+
+
+4. **Monitor Results**: Keep an eye on the terminal output to ensure the programming process goes smoothly.
+
+### Benefits
+
+- **Simplicity**: No need to interface with complex IDEs or tools.
+- **Automation**: You can automate the programming process within your scripts.
+- **Control**: You have complete control over the programming process.
+
+### Potential Uses
+
+- **DIY Projects**: Perfect for personal electronic projects.
+- **Automation**: Integrate FPGA programming into automated workflows.
+- **Learning**: Learn the basics of FPGA programming without heavy tools.
+
+### Try It Now
+
+You're ready to program your FPGA directly from the terminal. Go ahead, try out this technique, and share your experiences. You'll discover how powerful and convenient it can be for your FPGA projects.
+
+---
+
+Feel free to customize this text as needed and add it to your GitHub project to share this technique with other FPGA enthusiasts.
